@@ -1,8 +1,5 @@
 # JwtAuth
-Short description and motivation.
-
-## Usage
-How to use my plugin.
+JWT auth gem
 
 ## Installation
 Add this line to your application's Gemfile:
@@ -12,17 +9,5 @@ gem 'jwt_auth'
 ```
 
 And then execute:
-```bash
-$ bundle
-```
-
-Or install it yourself as:
-```bash
-$ gem install jwt_auth
-```
-
-## Contributing
-Contribution directions go here.
-
-## License
-The gem is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
+Add this line into routes.rb
+`mount JwtAuth::Engine, at: "/auth"`
